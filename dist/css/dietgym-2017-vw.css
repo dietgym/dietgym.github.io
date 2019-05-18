@@ -1,0 +1,406 @@
+/*!
+ * Copyright 2014 Diet'Gym
+ *
+ * Licensed under the Creative Commons Attribution 3.0 Unported License. For
+ * details, see http://creativecommons.org/licenses/by/3.0/.
+ */
+
+/*
+ * Color declaration
+ */
+ /* Purple based */
+:root{
+    --color-primary-0: #e1daed; /*clair+*/
+    --color-primary-1: #cdbfe3; /*clair*/
+    --color-primary-2: #563d7c; /*milieu*/
+    --color-primary-3: #463265; /*fonce*/
+    --color-primary-4: #F3F0F7; /*primary-0 opacity 50+*/
+
+    --color-white: #ffffff; /*noir*/
+    --color-black: #000000; /*blanc*/
+}
+
+html{
+    font-size: 13px;
+}
+
+
+/* Higher than iPhone but smaller than browser */
+/*@media (max-width: 768px) {*/
+@media (max-width: 812px) {
+    html{
+	    font-size: 11px;
+    }
+}
+
+/*@media (max-width: 320px) {*/
+@media (max-width: 415px) {
+    html{
+        font-size: 10px;
+    }
+}
+
+body{
+	background-color: var(--color-white);
+	line-height: 1.428571429;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: var(--color-black);
+	height: auto;
+}
+
+/* Menu related */
+.dg-logo-nav{
+    width: 15px;
+    height:auto;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.dg-purple-nav{
+    position:absolute;
+	/*top: 56px;*/
+	height: 100%; /*433px; is the height of the vertical banner*/
+	background-color: var(--color-primary-4);
+	z-index: -1;
+}
+
+
+
+
+
+/* **** ********************* **** */
+/* ****        Home page      **** */
+/* **** ********************* **** */
+.dg-logo-home{
+ max-width:100%;
+ height:auto;
+/* padding-left:5px;
+ padding-top:5px;*/
+ padding-bottom:5px;
+ margin-top:-5px;
+}
+
+.dg-banner {
+    max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.dg-enter{
+	font-size: 2rem;
+}
+
+.dg-header {
+  font-size: 2.5rem;
+  text-align: left;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+  color: var(--color-primary-2);
+  background-color: var(--color-white);
+}
+.dg-header h1 {
+  color: var(--color-primary-2);
+  font-size: 5rem;
+  line-height: 1;
+
+}
+.dg-header p {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+dg-index-footer{
+    border-color:#A0A0A0 ;
+   	border-top-width: 2px;
+   	border-top-style: solid;
+    box-shadow: 0px -1px 0px rgba(255, 255, 255, 0.1) ;
+   	margin-bottom:20px;
+   	color: var(--color-black);
+}
+
+.dg-index-footer h2{
+    font-size:2rem;
+}
+
+.dg-index-footer p{
+    font-size:2rem;
+    font-weight: 300;
+}
+
+/* Ipad */
+@media (max-width: 812px) {
+ .dg-enter{
+ 	font-size: 1.2rem;
+ }
+
+ .dg-header h1{
+    font-size: 2.5rem;
+ }
+ .dg-header p {
+   font-size: 1.7rem;
+ }
+ .dg-index-footer h2{
+     font-size: 1.5rem;
+ }
+ .dg-index-footer p{
+     font-size: 1.1rem;
+ }
+}
+
+/* IPhone Plus or smaller */
+@media (max-width: 415px) {
+ .dg-enter{
+ 	font-size: 0.75rem;
+ }
+
+ .dg-header h1{
+    font-size: 1.8rem;
+ }
+ .dg-header p {
+   font-size: 1.1rem;
+ }
+ .dg-index-footer h2{
+     font-size: 1.1rem;
+ }
+ .dg-index-footer p{
+     font-size: 1rem;
+ }
+}
+
+
+/* **** ********************* **** */
+
+/* TODO dg-container RELEVANT ? */
+.dg-container{
+	padding-left:5px;
+	padding-right:5px;	
+	margin: 0; 
+}
+
+
+/* **** ********************* **** */
+/* Page footer */
+.dg-footer {
+  /*padding-top: 30px; */
+  color: var(--color-primary-0) ;
+  background-color: var(--color-white);
+  text-align: center;
+  margin-bottom: 0;
+  min-width: 100%;
+  display: block;
+}
+
+.dg-footer a {
+	color: var(--color-primary-0);
+	font-weight:bold;
+}
+.dg-footer a:hover {
+	color: var(--colo-primary-4);
+}
+.dg-footer a:visited {
+	color: var(--color-primary-2);
+}
+
+/*.dg-signature{
+ padding-bottom: 10px;
+ padding-right: 40px;
+}*/
+
+.dg-logo-signature{
+ height:auto;
+ width:50%;
+}
+
+@media (max-width: 768px) {
+    .dg-logo-signature{
+        height:auto;
+        width:70%;
+    }
+}
+
+.dg-facebook {
+    width: 30%;
+    max-height:40%;
+}
+
+
+.dg-img-right{
+	width:45%;
+	height: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+
+.dg-img-float-right{
+	position:absolute;
+	top: 320px;
+	right:30px;
+	max-width:60%;
+	height: auto;
+}
+
+.get-in-touch input[type=text],.get-in-touch input[type=email], .get-in-touch textarea {
+background: rgb(235, 241, 245);
+color: rgb(36, 39, 41);
+}
+.get-in-touch  input:focus, .get-in-touch  textarea:focus {
+outline: 0;
+background: #FFF;
+}
+
+/*.dg-btn{  color: var(--color-primary-1);
+  background-color: var(--color-primary-2);
+}*/
+
+.dg-price{
+  background-color: var(--color-primary-1);
+  color: var(--color-primary-3);
+}
+
+/*
+ * Content
+ */
+
+ .
+.dg-content{
+/*    border-color:#A0A0A0 ;
+	border-top-width: 1px;
+	border-top-style: solid;
+	overflow:scroll; */
+    box-shadow: 0px -1px 0px rgba(255, 255, 255, 0.1) ;
+	margin-bottom:20px;
+	color: var(--color-black);
+}
+
+.dg-content  a {
+	color: var(--color-primary-3);
+    font-weight:bold;
+}
+.dg-content a:hover {
+	color: var(--color-primary-3);
+}
+.dg-content a:visited {
+	color: var(--color-primary-1);
+}
+.dg-content h2{
+    font-size: 2rem;
+}
+.dg-content h3{
+    font-size: 1.8rem;
+}
+.dg-content h4{
+    font-size: 1.4rem;
+}
+
+
+.dg-copyright {
+    font-size: 0.8rem;
+	color: var(--color-primary-1);
+	/*background-color: var(--color-white);*/
+}
+
+.dg-copyright  a {
+	color: var(--color-primary-1);
+
+}
+.dg-copyright a:hover {
+	color: var(--color-primary-3);
+	font-weight:bold;
+}
+.dg-content a:visited {
+	color: var(--color-primary-1);
+}
+
+/* **** ****************** **** */
+/* ****       Concept      **** */
+/* **** ****************** **** */
+.dg-logo-picto{
+    max-width:60%;
+    height:auto;
+    padding:5px;
+}
+.dg-logo-picto-mini{
+    max-width:80%;
+    height:auto;
+    padding:5px;
+}
+.dg-fruit{
+    max-width:80%;
+    height:auto;
+    padding:5px;
+}
+
+/* TODO FIX max-width (I need to understand how this media query behaves*/
+@media (max-width: 768px) {
+    .dg-logo-picto{
+        max-width:40%;
+        height:auto;
+
+    }
+    .dg-fruit{
+        max-width:60%;
+        height:auto;
+        padding:5px;
+    }
+
+}
+/* Fixed default browser padding for UL */
+.dg-concept-ul {
+  margin: 0;
+  padding:10px;
+}
+
+/* **** ****************** **** */
+/* ****      Formule     **** */
+/* **** ****************** **** */
+/*.dg-banner-formules{
+    position:absolute;
+    float: right;
+	top: 70px;
+	margin-left:auto;
+	margin-right:0;
+	height: 30%; //433px; is the height of the vertical banner
+	background-color: var(--color-primary-4);
+	z-index: 1;
+
+}*/
+.dg-banner-formules{
+    max-width:70%;
+    height:auto;
+    padding:5px;
+}
+@media (max-width: 768px) {
+.dg-banner-formules{
+    max-width:90%;
+    height:auto;
+    padding:5px;
+}
+}
+
+/* **** ****************** **** */
+/* ****         Liens      **** */
+/* **** ****************** **** */
+.dg-banner-liens{
+    max-width:60%;
+    height:auto;
+    padding:5px;
+}
+
+/*@media (max-width: 768px) {*/
+@media (max-width: 812px) {
+    .dg-banner-liens{
+        max-width:40%;
+        height:auto;
+        padding:5px;
+     }
+}
+
+/* IPhone Plus or smaller */
+@media (max-width: 415px) {
+    .dg-banner-liens{
+        max-width:25%;
+        height:auto;
+        padding:5px;
+     }
+}
