@@ -50,7 +50,7 @@ body{
 
 /* Menu related */
 .dg-logo-nav{
-    width: 15px;
+    width: 17px;
     height:auto;
     padding-right: 0px;
     padding-left: 0px;
@@ -296,20 +296,20 @@ background: #FFF;
 
 .dg-copyright {
     font-size: 0.8rem;
-	color: var(--color-primary-1);
+	color: var(--color-primary-3);
 	/*background-color: var(--color-white);*/
 }
 
 .dg-copyright  a {
-	color: var(--color-primary-1);
+	color: var(--color-primary-3);
 
 }
 .dg-copyright a:hover {
-	color: var(--color-primary-3);
+	color: var(--color-primary-1);
 	font-weight:bold;
 }
 .dg-content a:visited {
-	color: var(--color-primary-1);
+	color: var(--color-primary-3);
 }
 
 /* **** ****************** **** */
@@ -372,11 +372,12 @@ background: #FFF;
 }
 @media (max-width: 768px) {
 .dg-banner-formules{
-    max-width:90%;
+    max-width:100%;
     height:auto;
     padding:5px;
 }
 }
+
 
 /* **** ****************** **** */
 /* ****         Liens      **** */
