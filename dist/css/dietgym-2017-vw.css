@@ -409,17 +409,44 @@ background: #FFF;
 /* **** ****************** **** */
 /* ****    Video youtube   **** */
 /* **** ****************** **** */
-.video-responsive {
-overflow:hidden;
-padding-bottom:56.25%;
-position:relative;
-height:0;
+
+.video-wrapper {
+	width: 500px;
+	max-width: 100%;
 }
 
-.video-responsive iframe {
-left:0;
-top:0;
-height:100%;
-width:100%;
-position:absolute;
+/* Higher than iPhone but smaller than browser */
+/*@media (max-width: 768px) {*/
+@media (max-width: 812px) {
+.video-wrapper {
+	width: 380px;
+	max-width: 100%;
 }
+}
+/*@media (max-width: 320px) {*/
+@media (max-width: 415px) {
+ .video-wrapper {
+ 	width: 250px;
+ 	max-width: 100%;
+ }
+}
+
+
+.video-responsive {
+    position:relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
